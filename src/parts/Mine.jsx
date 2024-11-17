@@ -106,8 +106,8 @@ const Mine = () => {
       </div>
 
       <div className="absolute bottom-2 left-0 right-0 w-full z-10 c-space">
-        <a href="#contact" className="w-fit">
-          <Button name="For Contact" isBeam containerClass="sm:w-fit w-full sm:min-w-96 font-extrabold "/>
+        <a href="#about" className="w-fit">
+          <Button name="Explore" isBeam containerClass="sm:w-fit w-full sm:min-w-96 font-extrabold "/>
         </a>
       </div>
 

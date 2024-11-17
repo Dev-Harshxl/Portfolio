@@ -3,6 +3,8 @@ import Nav from "./parts/Nav";
 import Mine from "./parts/Mine";
 import About from "./parts/About";
 import Projects from "./parts/Projects";
+import WorkExperience from "./parts/Experience";
+import Contact from "./parts/Contact";
 
 const App = () => {
   return (
@@ -11,6 +13,9 @@ const App = () => {
       <Mine />
       <About />
       <Projects />
+      <WorkExperience />
+      <Contact />
+      <Footer />
 
     </main>
   );
