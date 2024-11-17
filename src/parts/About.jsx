@@ -7,7 +7,7 @@ const About = () => {
   const [hasCopied, setHasCopied] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText(' adrian@jsmastery.pro');
+    navigator.clipboard.writeText('harshalgupta.dev@gmail.com');
     setHasCopied(true);
 
     setTimeout(() => {
@@ -25,7 +25,9 @@ const About = () => {
             <div>
               <p className="grid-headtext">Hi, I’m Harshal Gupta</p>
               <p className="grid-subtext">
-              With hands-on experience in web development through two internships and freelance projects, I've honed my skills in MERN stack development. I've worked on a variety of projects, delivering efficient and user-friendly applications that meet real-world needs.
+              {/* I've honed my skills in Web development through internships and freelance projects in this domain. I've worked on a variety of projects, delivering efficient and user-friendly applications that meet real-world needs. */}
+              I love solving problems and building things through code. Programming isn&apos;t just my
+                profession—it&apos;s my passion. I enjoy exploring new technologies, and enhancing my skills.
               </p>
             </div>
           </div>
@@ -33,13 +35,17 @@ const About = () => {
 
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
-            <img src="assets/grid2.png" alt="grid-2" className="w-full sm:h-[276px] h-fit object-contain" />
+            <img src="assets/grid2.png" alt="grid-2" className=" sm:h-[276px] h-fit object-contain" />
 
             <div>
-              <p className="grid-headtext">Tech Stack</p>
+              <p className="grid-headtext">Certifications</p>
               <p className="grid-subtext">
-                I specialize in a variety of languages, frameworks, and tools that allow me to build robust and scalable
-                applications
+               <ul type="diamond" className='leading-10'>
+                <li>Full Stack Web Developer : WSCubeTech </li><hr />
+                <li>Java Developer : ApnaCollege</li><hr />
+                <li>ReactJS Internship : Celebal Technologies</li><hr />
+                <li>MERN Stack Developer : ApnaCollege</li><hr />
+               </ul>
               </p>
             </div>
           </div>
@@ -55,25 +61,31 @@ const About = () => {
                 backgroundImageOpacity={0.5}
                 showAtmosphere
                 showGraticules
-                globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
+                globeImageUrl="//unpkg.com/three-globe/example/img/earth-day.jpg"
                 bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
                 labelsData={[{ lat: 73.0243, lng: -26.2389, text: 'I am here', color: 'white', size: 15 }]}
               />
             </div>
             <div>
               <p className="grid-headtext">I’m very flexible with time zone communications & locations</p>
-              <p className="grid-subtext">I&apos;m based in Rjieka, Croatia and open to remote work worldwide.</p>
-              <Button name="Contact Me" isBeam containerClass="w-full mt-10" />
+              {/* <Button name="E-mail" isBeam containerClass="w-full mt-5 font-extrabold" /> */}
+
+              <div className="copy-container mt-10" onClick={handleCopy}>
+                <Button name="" isBeam containerClass="w-full  font-extrabold" />
+                <img src={hasCopied ? 'assets/tick.svg' : 'assets/copy.svg'} alt="copy" />
+                <p className="lg:text-xl md:text-xl font-medium text-gray_gradient text-white">harshalgupta.dev@gmail.com</p>
+              </div>
+              <p className="grid-subtext mt-20">I&apos;m based in Jodhpur (Rajasthan),INDIA and <br />I am open to remote work worldwide.</p>
+             
             </div>
           </div>
         </div>
 
         <div className="xl:col-span-2 xl:row-span-3">
           <div className="grid-container">
-            <img src="assets/grid3.png" alt="grid-3" className="w-full sm:h-[266px] h-fit object-contain" />
 
             <div>
-              <p className="grid-headtext">My Passion for Coding</p>
+              <p className="grid-headtext">Tech Stack</p>
               <p className="grid-subtext">
                 I love solving problems and building things through code. Programming isn&apos;t just my
                 profession—it&apos;s my passion. I enjoy exploring new technologies, and enhancing my skills.
@@ -92,10 +104,7 @@ const About = () => {
 
             <div className="space-y-2">
               <p className="grid-subtext text-center">Contact me</p>
-              <div className="copy-container" onClick={handleCopy}>
-                <img src={hasCopied ? 'assets/tick.svg' : 'assets/copy.svg'} alt="copy" />
-                <p className="lg:text-2xl md:text-xl font-medium text-gray_gradient text-white">harshalgupta.dev@gmail.com</p>
-              </div>
+             
             </div>
           </div>
         </div>
