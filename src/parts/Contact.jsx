@@ -26,7 +26,7 @@ const Contact = () => {
         'template_jd9hmpf',
         {
           from_name: form.name,
-          to_name: 'JavaScript Mastery',
+          to_name: 'XYZ',
           from_email: form.email,
           to_email: 'harshalgupta.dev@gmail.com',
           message: form.message,

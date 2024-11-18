@@ -74,8 +74,9 @@ body {
   }
 
   .copy-container {
-    @apply cursor-pointer flex justify-center items-center gap-2;
+    @apply cursor-pointer flex justify-center items-center gap-2 ;
   }
+
 
   /* projects section  */
   .arrow-btn {
@@ -85,6 +86,7 @@ body {
   .tech-logo {
     @apply w-10 h-10 rounded-md p-2 bg-neutral-100 bg-opacity-10 backdrop-filter backdrop-blur-lg flex justify-center items-center;
   }
+ 
 
   /* clients section */
   .client-container {

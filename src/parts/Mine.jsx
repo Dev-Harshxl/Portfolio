@@ -65,8 +65,7 @@ const Mine = () => {
         </p>
 
         <p className="hero_tag text-gray_gradient z-20">
-          Building Websites and Design Solutions
-        </p>
+        Building the web, one pixel at a time        </p>
       </div>
 
       <div className="w-full h-full absolute inset-0">
