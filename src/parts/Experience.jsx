@@ -11,8 +11,9 @@ const WorkExperience = () => {
 
   return (
     <section className="c-space my-20" id="work">
-      <div className="w-full text-white-600">
-        <p className="head-text">My Work Experience</p>
+      <div className='h-20 w-full' style={{background:'transparent'}}></div>
+      <div className="w-full text-white-600 ">
+        <p className="head-text ">My Work Experience</p>
 
         <div className="work-container">
           <div className="work-canvas">

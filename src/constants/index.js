@@ -1,3 +1,17 @@
+import {
+  javascript,
+  typescript,
+  html,
+  css,
+  reactjs,
+  redux,
+  tailwind,
+  nodejs,
+  mongodb,
+  git,
+  threejs,
+} from "../assets";
+
 export const navLinks = [
     {
       id: 1,
@@ -11,11 +25,16 @@ export const navLinks = [
     },
     {
       id: 3,
+      name: 'Projects',
+      href: '#proj',
+    },
+    {
+      id: 4,
       name: 'Work',
       href: '#work',
     },
     {
-      id: 4,
+      id: 5,
       name: 'Contact',
       href: '#contact',
     },
@@ -23,14 +42,16 @@ export const navLinks = [
   
 
   export const myProjects = [
+
+    //1st boardify
     {
-      title: 'Podcastr - AI Podcast Platform',
-      desc: 'Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created. With advanced AI-powered features like text-to-multiple-voices functionality, it allows creators to generate diverse voiceovers from a single text input.',
+      title: 'Boardify - A Kanban Board Application',
+      desc: 'A Kanban application built with React.js, Firebase, Drag & Drop, Material-UI (MUI) v5, and Zustand. This application allows users to manage tasks and workflows with a user-friendly interface.',
       subdesc:
-        'Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex, Podcastr is designed for optimal performance and scalability.',
-      href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
+        'The Kanban board provides a comprehensive solution for task and workflow management, offering personalized user access through a secure login system. Its responsive design ensures a seamless experience across devices, while the intuitive drag-and-drop functionality simplifies task movement between workflow stages. Users can create multiple boards, lists, and cards to structure tasks effectively, assign responsibilities, set deadlines, and add detailed descriptions or attachments to enhance task clarity. Additional features like customizable tags, progress tracking, and priority settings enable efficient organization. The platforms user-centric design makes it ideal for personal productivity, team collaboration, and project management',
+      href: 'https://github.com/Dev-Harshxl/Boardify',
       texture: '/textures/project/project1.mp4',
-      logo: '/assets/project-logo1.png',
+      logo: '/assets/logo.svg',
       logoStyle: {
         backgroundColor: '#2A1816',
         border: '0.2px solid #36201D',
@@ -50,24 +71,25 @@ export const navLinks = [
         },
         {
           id: 3,
-          name: 'TypeScript',
-          path: '/assets/typescript.png',
+          name: 'Firebase',
+          path: '/assets/firebase.png',
         },
         {
           id: 4,
-          name: 'Framer Motion',
-          path: '/assets/framer.png',
+          name: 'Zustand',
+          path: '/assets/zustand.jpg',
         },
       ],
     },
+    //2nd MeetNest
     {
-      title: 'LiveDoc - Real-Time Google Docs Clone',
-      desc: 'LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.',
+      title: 'MeetNest - Video Conferencing App',
+      desc: 'Designed a full-featured video conferencing app with real-time chat, scheduling, and seamless user authentication using Clerk and Stream.',
       subdesc:
-        'With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.',
-      href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
+        'Developed a secure and responsive video conferencing application designed to provide a seamless and feature-rich meeting experience. The platform offers a familiar video setup with intuitive controls, allowing users to record meetings, share screens, send emoji reactions, and manage participants effectively. Users can adjust audio and video settings in real time for a personalized experience. The app supports scheduling future meetings with detailed configurations, accessing recordings of past meetings for reference, and hosting instant meetings using unique personal room links for quick collaboration. Integrated Clerk for robust user authentication, ensuring secure access and personalized profiles, and Stream to enable real-time, high-quality video and audio communication. Built with TypeScript, Next.js 14, and Sass, the application combines modern styling, responsive design, and advanced functionality.',
+      href: 'https://meet-nest-ten.vercel.app/',
       texture: '/textures/project/project2.mp4',
-      logo: '/assets/project-logo2.png',
+      logo: '/assets/meetnest.png',
       logoStyle: {
         backgroundColor: '#13202F',
         border: '0.2px solid #17293E',
@@ -92,19 +114,20 @@ export const navLinks = [
         },
         {
           id: 4,
-          name: 'Framer Motion',
-          path: '/assets/framer.png',
+          name: 'Next',
+          path: '/assets/next.png',
         },
       ],
     },
+    //3rd Agro
     {
-      title: 'CarePulse - Health Management System',
-      desc: 'An innovative healthcare platform designed to streamline essential medical processes. It simplifies patient registration, appointment scheduling, and medical record management, providing a seamless experience for both healthcare providers and patients.',
+      title: 'Agrofy India : Organic Products E-commerece',
+      desc: 'Created an organic e-commerce website with a focus on seamless product browsing and management. Built using **HTML**, **CSS**, **JavaScript**, **PHP**, and **MySQL**, the site enables users to view and purchase organic products while offering an **Admin Panel** for managing content, product details, categories, and customer testimonials with secure access.',
       subdesc:
-        'With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.',
-      href: 'https://www.youtube.com/watch?v=lEflo_sc82g',
+        'Developed an organic e-commerce website, built using HTML, CSS, JavaScript, PHP, MySQL, jQuery, Bootstrap, and Ajax. The platform features robust product management capabilities, allowing users to view and browse a variety of organic products, categorized for easy navigation, with detailed product information such as descriptions, prices, and availability.Implemented an intuitive Admin Panel to facilitate easy management of the websites content, including functionalities for updating and organizing product listings, managing product categories, displaying customer testimonials, and handling certifications. The admin panel ensures secure access, allowing only authorized personnel to make updates and changes to the website.',
+      href: 'https://github.com/Dev-Harshxl/AgroFYIndia',
       texture: '/textures/project/project3.mp4',
-      logo: '/assets/project-logo3.png',
+      logo: '/assets/agrro.png',
       logoStyle: {
         backgroundColor: '#60f5a1',
         background:
@@ -116,102 +139,78 @@ export const navLinks = [
       tags: [
         {
           id: 1,
-          name: 'React.js',
-          path: '/assets/react.svg',
+          name: 'html',
+          path: '/assets/html.png',
         },
         {
           id: 2,
-          name: 'TailwindCSS',
-          path: 'assets/tailwindcss.png',
+          name: 'javascript',
+          path: 'assets/javascript.jpg',
         },
         {
           id: 3,
-          name: 'TypeScript',
-          path: '/assets/typescript.png',
+          name: 'php',
+          path: '/assets/php.png',
         },
         {
           id: 4,
-          name: 'Framer Motion',
-          path: '/assets/framer.png',
+          name: 'MySQL',
+          path: '/assets/Myq.png',
         },
       ],
-    },
-    {
-      title: 'Horizon - Online Banking Platform',
-      desc: 'Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.',
-      subdesc:
-        'Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.',
-      href: 'https://www.youtube.com/watch?v=PuOVqP_cjkE',
-      texture: '/textures/project/project4.mp4',
-      logo: '/assets/project-logo4.png',
-      logoStyle: {
-        backgroundColor: '#0E1F38',
-        border: '0.2px solid #0E2D58',
-        boxShadow: '0px 0px 60px 0px #2F67B64D',
-      },
-      spotlight: '/assets/spotlight4.png',
-      tags: [
-        {
-          id: 1,
-          name: 'React.js',
-          path: '/assets/react.svg',
-        },
-        {
-          id: 2,
-          name: 'TailwindCSS',
-          path: 'assets/tailwindcss.png',
-        },
-        {
-          id: 3,
-          name: 'TypeScript',
-          path: '/assets/typescript.png',
-        },
-        {
-          id: 4,
-          name: 'Framer Motion',
-          path: '/assets/framer.png',
-        },
-      ],
-    },
-    {
-      title: 'Imaginify - AI Photo Manipulation App',
-      desc: 'Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology. With features like AI-driven image editing, a payments system, and a credits-based model.',
-      subdesc:
-        'Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.',
-      href: 'https://www.youtube.com/watch?v=Ahwoks_dawU',
-      texture: '/textures/project/project5.mp4',
-      logo: '/assets/project-logo5.png',
-      logoStyle: {
-        backgroundColor: '#1C1A43',
-        border: '0.2px solid #252262',
-        boxShadow: '0px 0px 60px 0px #635BFF4D',
-      },
-      spotlight: '/assets/spotlight5.png',
-      tags: [
-        {
-          id: 1,
-          name: 'React.js',
-          path: '/assets/react.svg',
-        },
-        {
-          id: 2,
-          name: 'TailwindCSS',
-          path: 'assets/tailwindcss.png',
-        },
-        {
-          id: 3,
-          name: 'TypeScript',
-          path: '/assets/typescript.png',
-        },
-        {
-          id: 4,
-          name: 'Framer Motion',
-          path: '/assets/framer.png',
-        },
-      ],
-    },
+    }
   ];
   
+  export const technologies = [
+    {
+      name: "HTML 5",
+      icon: html,
+    },
+    {
+      name: "CSS 3",
+      icon: css,
+    },
+    {
+      name: "JavaScript",
+      icon: javascript,
+    },
+    {
+      name: "TypeScript",
+      icon: typescript,
+    },
+    {
+      name: "React JS",
+      icon: reactjs,
+    },
+    {
+      name: "Redux Toolkit",
+      icon: redux,
+    },
+    {
+      name: "Tailwind CSS",
+      icon: tailwind,
+    },
+    {
+      name: "Node JS",
+      icon: nodejs,
+    },
+    {
+      name: "MongoDB",
+      icon: mongodb,
+    },
+    {
+      name: "Three JS",
+      icon: threejs,
+    },
+    {
+      name: "git",
+      icon: git,
+    },
+
+ 
+  ];
+
+
   export const calculateSizes = (isSmall, isMobile, isTablet) => {
     return {
       deskScale: isSmall ? 0.05 : isMobile ? 0.06 : 0.065,
@@ -226,29 +225,31 @@ export const navLinks = [
   export const workExperiences = [
     {
       id: 1,
-      name: 'Framer',
-      pos: 'Lead Web Developer',
-      duration: '2022 - Present',
-      title: "Framer serves as my go-to tool for creating interactive prototypes. I use it to bring designs to  life, allowing stakeholders to experience the user flow and interactions before development.",
-      icon: '/assets/framer.svg',
+      name: 'Celebal Technologies',
+      pos: 'React JS Intern',
+      duration: 'May 2024 - Sept 2024',
+      title: `Developed a Spotify Clone with a dynamic UI.\nCreated a Full-stack Kanban task management app for visual workflow.\nBuilt a responsive E-Commerce Store with product listings and a cart.`,
+
+      icon: '/assets/celebal.svg',
       animation: 'victory',
     },
     {
       id: 2,
-      name: 'Figma',
+      name: 'Unanimous Technologies',
       pos: 'Web Developer',
-      duration: '2020 - 2022',
-      title: "Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations. Its cloud-based.",
-      icon: '/assets/figma.svg',
+      duration: 'May 2023 - July 2023',
+      title: "Demonstrated strong problem-solving and coding skills throughout the projects Contributed in two end-to-end web development projects from inception to deployment.",
+      icon: '/assets/unanimous.svg',
       animation: 'clapping',
     },
     {
       id: 3,
-      name: 'Notion',
-      pos: 'Junior Web Developer',
-      duration: '2019 - 2020',
-      title: "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
-      icon: '/assets/notion.svg',
+      name: 'Freelancer',
+      pos: 'Web Developer',
+      duration: '2022 - present',
+      title: `Developed 'Dharti,' a feature-rich dynamic real estate website with property listings and search functionality, using PHP and MySQL.
+      \nDesigned and built a professional static landing page for a consultancy, leveraging PHP and WordPress for a seamless user experience.`,
+      icon: '/assets/star.png',
       animation: 'salute',
     },
   ];
